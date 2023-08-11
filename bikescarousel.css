@@ -1,0 +1,724 @@
+
+@font-face{
+  font-family:yfr;
+  src: url(Fonts/BarlowSemiCondensed-Regular.ttf);
+}
+
+
+.buttons {
+  position: relative  ;
+  left: 93.1%;
+  top: -320px;
+  
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  left: 500px;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsla(0, 0%, 0%, 0);
+  transition:  transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+.buttons img{
+  width: 48px;
+height: 48px;
+position: absolute;
+top: 205px;
+left: 0px;
+}
+.button-82-front {
+  display: block;
+  position: relative;
+  
+padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+ width: 25px;
+ height: 25px;
+  background: hsla(345, 100%, 47%, 0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+#prev:hover{
+  position: relative;
+  left: -506px;
+}
+#prev{
+  position: relative;
+  left: -461.5px;
+    top: -100.5px;
+  transition: all 0.4s ease;
+  
+}
+#next:hover{
+  position: relative;
+  left: 441px;
+}
+#next{
+  position: relative;
+  left: 496px;
+  top: -100.5px;
+  transition: all 0.4s ease;
+}
+#btimg img{
+  
+  width: 5px;
+  height: 5px;
+}
+
+
+
+.btmg{
+  margin-left: 3px;
+  position: relative;
+  top: 5px;
+  width: 15px;
+  height: 20px;
+  background-image: url(Images/bluetooth.png);
+  background-size: cover;
+}
+
+
+
+.carouselmain{
+  position: relative;
+  
+  
+  height: auto;
+ width:1250px ;
+  }
+
+#carouselbikesmainsect{
+  position: absolute;
+display:flex;
+z-index:1 ;
+width: 100%;
+white-space: nowrap;
+
+justify-content: center;
+
+}
+
+
+ 
+
+
+#carousel div.prev{
+  z-index: 5;
+  position:absolute;
+  left: 255px;
+  top:52px ;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  position: relative;
+  left: 0px;
+  width: 180px;
+  top:0px;
+}
+#carousel div.prev div{
+
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  top: 97%;
+  text-align: center;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 633.5px;
+  transform: translateY(0px) translateX(-50%);
+  
+}
+#carousel div.next img{
+  position: relative;
+  left: 0px;
+  width: 180px;
+  top:0px;
+}
+
+
+#carousel div.next{
+  position:absolute;
+  top:52px ;
+  z-index: 5;
+  left: 995px;
+
+  transform: translateY(50px) translateX(-50%);
+  
+}
+
+#carousel div.next div{
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  position: absolute;
+  top: 97%;
+  left:-0.5px ;
+  text-align: center;
+  }
+  #carousel div.selected div{
+    display: flex;
+    justify-content: center;
+    width: 370.4px;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    
+    }
+
+  #carousel {
+  
+    position: relative;
+    height: 400px;
+    top: 169px;
+    transform: translateY(-50%);
+    overflow: hidden;
+  }
+  #carousel div {
+    position:absolute;
+    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+    opacity: 1;
+  }
+  #carousel img{
+    width: 370.4px;
+    transition: width 400ms;
+    -webkit-user-drag: none;
+     position: relative;
+     top: 6px;
+     left: -8px;
+     
+  }
+  
+  
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideLeft img{
+    width: 200px;
+  }
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+  }
+  #carousel div.hideRight img {
+    width: 200px;
+  }
+ 
+ 
+  #carousel img:hover {
+    cursor: pointer
+  }
+  
+  
+  
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+  }
+  #carousel div.prevLeftSecond img {
+    width: 200px;
+  }
+  
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+  }
+  #carousel div.nextRightSecond img {
+    width: 200px;
+  }
+
+  
+  
+
+#prev:hover{
+position: relative;
+left: -480px;
+}
+
+#next:hover{
+  position: relative;
+  left: 510px;
+  }
+  
+  .bikenamediv::after{
+position: absolute;
+top: 105%;
+left: 0%;
+width: 0%;
+
+content: "";
+height: 2px;
+background-color: #0000ab;
+transition: all 0.4s ease;
+  }
+
+.bikenamediv{
+  color: #0000ab;
+    font-family: yfr;
+    font-weight:bold ;
+    font-size: 24px;
+    
+  position: relative;
+  top: 0px;
+  width: max-content;
+  height: fit-content;
+}
+.prev:hover .bikenamediv::after{
+  width: 120%;
+}
+.next:hover .bikenamediv::after{
+  width: 120%;
+}
+.selected:hover .bikenamediv::after{
+  width: 120%;
+}
+
+.selected .bikenamediv{
+  width: max-content;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////// 
+
+.btmg{
+  position: relative;
+  top: 3.5px;
+  left: 7.25px;
+  display: inline-block;
+background-image: url(Images/bluetooth.png);
+width: 24.65px;
+height: 25px;
+background-size: 73%;
+background-repeat: no-repeat;
+filter: brightness(1.2);
+}
+
+
+#scooterslidermain::before{
+  content: " ";
+  position: absolute;
+  top: -95.25px;
+  left: -20%;
+  justify-content: center;
+ transform: rotate(-6deg);
+  width: 140%;
+  height: 500px;
+  background-color:rgb(182, 203, 238);
+  border-top:1px solid #0000ab ;
+  
+}
+
+#scooterslidermain::after{
+  content: " ";
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  justify-content: center;
+
+  width: 100%;
+  height: 1000px;
+  background-image: url(Images/bg-scooters.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 127.5px;
+
+  
+}
+
+#scooterslidermain{
+  position: relative;
+  top: 870px;
+  
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  background-color:rgb(182, 203, 238);
+
+  
+  z-index: 2;
+  
+}
+#scooterslider {
+  position: relative;
+  height: 430px;
+  top: 262.5px;
+  left: -9.75%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index: 100;
+}
+#scooterslider div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+}
+#scooterslider div img {
+  width: 400px;
+  transition: width 400ms;
+   -webkit-user-drag: none;
+  
+}
+#scooterslider div.hideLefttsc {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#scooterslider div.hideLefttsc img {
+  width: 200px;
+}
+#scooterslider div.hideRightsc {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#scooterslider div.hideRightsc img {
+  width: 200px;
+}
+#scooterslider div.prevsc {
+  position:absolute;
+  z-index: 5;
+  
+  transform: translateY(50px) translateX(-50%);
+}
+#scooterslider img:hover {
+  cursor: 
+}
+#scooterslider div.prevsc img {
+  width: 300px;
+}
+#scooterslider div.prevLeftSecondsc {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+}
+#scooterslider div.prevLeftSecondsc img {
+  width: 200px;
+}
+#scooterslider div.selectedsc {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#scooterslider div.nextsc {
+  position: relative;
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#scooterslider div.nextsc img {
+  width: 300px;
+}
+#scooterslider div.nextRightSecondsc {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+}
+#scooterslider div.nextRightSecondsc img {
+  width: 200px;
+}
+
+/*previous or nextsc buttons css*/
+
+.buttonsc {
+  position: absolute;
+transform: translateX(-50%);
+top: 335.5px;
+left: 0px;
+width: 100vw;
+z-index: 100;
+display: flex;
+justify-content: center;
+}
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-82-pushable img{
+  width:50px;
+  height: 50px;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+#nextsc{
+  position: relative;
+  left: 1080px;
+  top: -30px;
+  transition: left 0.4s ease;
+  z-index: 105;
+}
+#nextsc:hover{
+  position: relative;
+  left: 1090px;
+}
+#scooterslider div.prevsc{
+  z-index: 5;
+  position:absolute;
+  left: 377.5px;
+  top:45px ;
+  transform: translateY(50px) translateX(-50%);
+}
+#scooterslider div.prevsc img {
+  position: relative;
+  left: 0px;
+  width: 180px;
+  top:0px;
+}
+#scooterslider div.nextsc{
+  z-index: 5;
+  position:absolute;
+  left: 1117.5px;
+  top:45px ;
+  transform: translateY(50px) translateX(-50%);
+}
+#scooterslider div.nextsc img {
+  position: relative;
+  left: 0px;
+  width: 180px;
+  top:0px;
+}
+#scooterslider div.selectedsc img {
+  position: relative;
+  left: 0px;
+  width: 370.4px;
+  top:0px;
+}
+#scooterslider div.selectedsc {
+  position: relative;
+  left: 60% ;
+ 
+  top:0px;
+}
+#prevsc{
+  position: relative;
+  top: -30px;
+  left: 112.5px;
+  transition: left 0.4s ease;
+  z-index: 105;
+}
+#prevsc:hover{
+  position: relative;
+  left: 102.5px;
+}
+
+.selectedsc {
+  align-content: center;
+  width: max-content;
+}
+
+.selectedsc .scname{
+
+  position: absolute;
+
+  left: 25%;
+  
+  
+  top: 90%;
+  text-align: center;
+  font-family: yfr;
+  color: #0000ab;
+  font-size: 26px;
+  font-weight: bold;
+  width: 190px;
+}
+.selectedsc span{
+  margin-left: 10px;
+  display: inline-block;
+  width:20px;
+  height: 30px;
+background-image: url(Images/bluetooth.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+.prevsc .scname{
+
+  position: relative;
+
+  
+  
+  left: 5%;
+  top: 90%;
+  text-align: center;
+  font-family: yfr;
+  color: #0000ab;
+  font-size: 24px;
+  font-weight: bold;
+  width: 170px;
+}
+.prevsc span{
+  margin-left: 10px;
+  display: inline-block;
+  width:20px;
+  height: 30px;
+background-image: url(Images/bluetooth.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.nextsc .scname{
+
+  position: relative;
+
+  width: 170px;
+  
+  left: 5%;
+  top: 90%;
+  text-align: center;
+  font-family: yfr;
+  color: #0000ab;
+  font-size: 24px;
+  font-weight: bold;
+}
+.nextsc span{
+  margin-left: 10px;
+  display: inline-block;
+  width:20px;
+  height: 30px;
+background-image: url(Images/bluetooth.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.selectedsc .scname::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+left: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #0000ab;
+  transition: width 0.4s ease;
+}
+ .selectedsc:hover .scname::after{
+  width: 100%;
+  
+}
+.prevsc .scname::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+left: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #0000ab;
+  transition: width 0.4s ease;
+}
+ .prevsc:hover .scname::after{
+  width: 100%;
+  
+}
+
+.nextsc .scname::after{
+  content: "";
+  position: absolute;
+  top: 97%;
+left: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #0000ab;
+  transition: width 0.4s ease;
+}
+ .nextsc:hover .scname::after{
+  width: 100%;
+  
+}
